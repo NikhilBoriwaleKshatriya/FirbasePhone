@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import UserNotifications
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +20,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+         FirebaseApp.configure()
+        if #available(iOS 10, *)
+        {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.badge,.sound,.alert], completionHandler: {(granted ,error) in})
+            application.registerForRemoteNotifications()
+            
+        }else
+        {
+            let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+
+            UIApplication.shared.registerUserNotificationSettings(settings)
+            UIApplication.shared.registerForRemoteNotifications()
+            
+        }
         return true
     }
 

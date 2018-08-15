@@ -14,6 +14,9 @@
 		8F37B9AE1FA1935E009DFA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F37B9AC1FA1935E009DFA35 /* LaunchScreen.storyboard */; };
 		8F37B9B91FA1935E009DFA35 /* FirbasePhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37B9B81FA1935E009DFA35 /* FirbasePhoneTests.swift */; };
 		8F37B9C41FA1935E009DFA35 /* FirbasePhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37B9C31FA1935E009DFA35 /* FirbasePhoneUITests.swift */; };
+		8F37B9D21FA1945A009DFA35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F37B9D11FA1945A009DFA35 /* GoogleService-Info.plist */; };
+		8F37B9D51FA1A8A2009DFA35 /* VerificationcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37B9D41FA1A8A2009DFA35 /* VerificationcodeVC.swift */; };
+		D83613C74605085DF695033E /* Pods_FirbasePhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E85059773248516688A6766 /* Pods_FirbasePhone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		365A51AD7C67738EB06192C1 /* Pods-FirbasePhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirbasePhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirbasePhone/Pods-FirbasePhone.debug.xcconfig"; sourceTree = "<group>"; };
+		5E85059773248516688A6766 /* Pods_FirbasePhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirbasePhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F37B9A01FA1935E009DFA35 /* FirbasePhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirbasePhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F37B9A31FA1935E009DFA35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F37B9A51FA1935E009DFA35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,10 @@
 		8F37B9BF1FA1935E009DFA35 /* FirbasePhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirbasePhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F37B9C31FA1935E009DFA35 /* FirbasePhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirbasePhoneUITests.swift; sourceTree = "<group>"; };
 		8F37B9C51FA1935E009DFA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F37B9D11FA1945A009DFA35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F37B9D31FA19C20009DFA35 /* FirbasePhone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirbasePhone.entitlements; sourceTree = "<group>"; };
+		8F37B9D41FA1A8A2009DFA35 /* VerificationcodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationcodeVC.swift; sourceTree = "<group>"; };
+		970E4D5B8A0C4B4951257CF8 /* Pods-FirbasePhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirbasePhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirbasePhone/Pods-FirbasePhone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83613C74605085DF695033E /* Pods_FirbasePhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EC20841614B509ECA69F88C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				365A51AD7C67738EB06192C1 /* Pods-FirbasePhone.debug.xcconfig */,
+				970E4D5B8A0C4B4951257CF8 /* Pods-FirbasePhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		821D4AE874520C7E6287C807 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E85059773248516688A6766 /* Pods_FirbasePhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F37B9971FA1935E009DFA35 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,8 @@
 				8F37B9B71FA1935E009DFA35 /* FirbasePhoneTests */,
 				8F37B9C21FA1935E009DFA35 /* FirbasePhoneUITests */,
 				8F37B9A11FA1935E009DFA35 /* Products */,
+				3EC20841614B509ECA69F88C /* Pods */,
+				821D4AE874520C7E6287C807 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +126,10 @@
 		8F37B9A21FA1935E009DFA35 /* FirbasePhone */ = {
 			isa = PBXGroup;
 			children = (
+				8F37B9D31FA19C20009DFA35 /* FirbasePhone.entitlements */,
+				8F37B9D11FA1945A009DFA35 /* GoogleService-Info.plist */,
 				8F37B9A31FA1935E009DFA35 /* AppDelegate.swift */,
+				8F37B9D41FA1A8A2009DFA35 /* VerificationcodeVC.swift */,
 				8F37B9A51FA1935E009DFA35 /* ViewController.swift */,
 				8F37B9A71FA1935E009DFA35 /* Main.storyboard */,
 				8F37B9AA1FA1935E009DFA35 /* Assets.xcassets */,
@@ -132,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F37B9C81FA1935E009DFA35 /* Build configuration list for PBXNativeTarget "FirbasePhone" */;
 			buildPhases = (
+				AB0FF7D4EF051218DC310CCB /* [CP] Check Pods Manifest.lock */,
 				8F37B99C1FA1935E009DFA35 /* Sources */,
 				8F37B99D1FA1935E009DFA35 /* Frameworks */,
 				8F37B99E1FA1935E009DFA35 /* Resources */,
+				EAB3918091D7673692999A59 /* [CP] Embed Pods Frameworks */,
+				589A1C28B3ACA8CB405BC946 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +229,14 @@
 					8F37B99F1FA1935E009DFA35 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					8F37B9B31FA1935E009DFA35 = {
 						CreatedOnToolsVersion = 9.0;
@@ -232,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F37B9D21FA1945A009DFA35 /* GoogleService-Info.plist in Resources */,
 				8F37B9AE1FA1935E009DFA35 /* LaunchScreen.storyboard in Resources */,
 				8F37B9AB1FA1935E009DFA35 /* Assets.xcassets in Resources */,
 				8F37B9A91FA1935E009DFA35 /* Main.storyboard in Resources */,
@@ -254,12 +298,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		589A1C28B3ACA8CB405BC946 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirbasePhone/Pods-FirbasePhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB0FF7D4EF051218DC310CCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirbasePhone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB3918091D7673692999A59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FirbasePhone/Pods-FirbasePhone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirbasePhone/Pods-FirbasePhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F37B99C1FA1935E009DFA35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8F37B9A61FA1935E009DFA35 /* ViewController.swift in Sources */,
+				8F37B9D51FA1A8A2009DFA35 /* VerificationcodeVC.swift in Sources */,
 				8F37B9A41FA1935E009DFA35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,9 +527,12 @@
 		};
 		8F37B9C91FA1935E009DFA35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365A51AD7C67738EB06192C1 /* Pods-FirbasePhone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirbasePhone/FirbasePhone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYMKKWGVGB;
 				INFOPLIST_FILE = FirbasePhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.Webcubator.FirbasePhone;
@@ -438,9 +544,12 @@
 		};
 		8F37B9CA1FA1935E009DFA35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 970E4D5B8A0C4B4951257CF8 /* Pods-FirbasePhone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirbasePhone/FirbasePhone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYMKKWGVGB;
 				INFOPLIST_FILE = FirbasePhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.Webcubator.FirbasePhone;
